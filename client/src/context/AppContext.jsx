@@ -5,10 +5,10 @@ import App from '../App';
 export const AppContext = createContext();
 
 const AppContextProvider = (props) => {
-  const [user, setUser] = useState(null);
-
+  const [user, setUser] = useState(false);
+   const [showLogin, setShowLogin] = useState(false);
   const value = {
-    user,setUser
+    user,setUser, showLogin, setShowLogin
   }
 
   return (
